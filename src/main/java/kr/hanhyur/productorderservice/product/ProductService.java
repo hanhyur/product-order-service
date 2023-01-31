@@ -1,5 +1,6 @@
 package kr.hanhyur.productorderservice.product;
 
+import jakarta.transaction.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,6 +18,7 @@ class ProductService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> addProduct(@RequestBody AddProductRequest request) {
         final Product product = new Product(request.productName(), request.price(), request.discountPolicy());
 
