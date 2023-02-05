@@ -27,6 +27,16 @@ class Product {
         this.price = price;
         this.discountPolicy = discountPolicy;
     }
+
+    public void update(String productName, int price, DiscountPolicy discountPolicy) {
+        Assert.hasText(productName, "Product Name is required");
+        Assert.isTrue(price > 0, "Price must be bigger than 0");
+        Assert.notNull(discountPolicy, "DiscountPolicy is required");
+
+        this.productName = productName;
+        this.price = price;
+        this.discountPolicy = discountPolicy;
+    }
 //
 //    public void assignId(Long id) {
 //        this.id = id;

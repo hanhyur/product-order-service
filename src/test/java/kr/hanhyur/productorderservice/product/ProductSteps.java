@@ -23,4 +23,12 @@ public class ProductSteps {
 
         return new AddProductRequest(productName, price, discountPolicy);
     }
+
+    public static ExtractableResponse<Response> getProduct(Long productId) {
+        return RestAssured.given().log().all()
+                .when()
+                .get("/products/{productId}", productId)
+                .then().log().all()
+                .extract();
+    }
 }
