@@ -31,4 +31,18 @@ public class ProductSteps {
                 .then().log().all()
                 .extract();
     }
+
+    public static UpdateProductRequest createUpdateProductRequest() {
+        return new UpdateProductRequest("Product Update", 2000, DiscountPolicy.NONE);
+    }
+
+    public static ExtractableResponse<Response> updateProductRequest(long productId) {
+        return RestAssured.given().log().all()
+                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                .body(createUpdateProductRequest())
+                .when()
+                .patch("/products/{productId}", productId)
+                .then().log().all()
+                .extract();
+    }
 }

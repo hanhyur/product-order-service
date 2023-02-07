@@ -18,8 +18,8 @@ public class ProductServiceTest {
         productService.addProduct(ProductSteps.createAddProductRequest());
 
         final Long productId = 1L;
-        final UpdateProductRequest request = new UpdateProductRequest("Product Update", 2000, DiscountPolicy.NONE);
-
+        final UpdateProductRequest request = ProductSteps.createUpdateProductRequest();
+        
         productService.updateProduct(productId, request);
 
         ResponseEntity<GetProductResponse> response = productService.getProduct(productId);

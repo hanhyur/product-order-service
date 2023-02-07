@@ -12,6 +12,5 @@ record GetProductResponse(
         Assert.notNull(id, "Id is required");
         Assert.hasText(productName, "Product Name is required");
         Assert.notNull(discountPolicy, "DiscountPolicy is required");
-
     }
 }
