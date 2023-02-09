@@ -1,7 +1,9 @@
 package kr.hanhyur.productorderservice.payment;
 
 import kr.hanhyur.productorderservice.order.Order;
+import org.springframework.stereotype.Component;
 
+@Component
 class PaymentService {
     private final PaymentPort paymentPort;
 

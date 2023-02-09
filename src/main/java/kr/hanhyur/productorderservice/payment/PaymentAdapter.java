@@ -3,7 +3,9 @@ package kr.hanhyur.productorderservice.payment;
 import kr.hanhyur.productorderservice.order.Order;
 import kr.hanhyur.productorderservice.product.DiscountPolicy;
 import kr.hanhyur.productorderservice.product.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 class PaymentAdapter implements PaymentPort {
     private final PaymentGateway paymentGateway;
     private final PaymentRepository paymentRepository;

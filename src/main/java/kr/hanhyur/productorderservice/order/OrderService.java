@@ -1,5 +1,6 @@
 package kr.hanhyur.productorderservice.order;
 
+import jakarta.transaction.Transactional;
 import kr.hanhyur.productorderservice.product.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/orders")
+public
 class OrderService {
     private final OrderPort orderPort;
 
@@ -18,6 +20,7 @@ class OrderService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> createOrder(@RequestBody final AddOrderRequest request) {
         final Product product = orderPort.getProductById(request.productId());
 
