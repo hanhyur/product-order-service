@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.HashMap;
 import java.util.Map;
 
-interface OrderRepository extends JpaRepository<Order, Long> {
+public interface OrderRepository extends JpaRepository<Order, Long> {
 //    private final Map<Long, Order> persistence = new HashMap<>();
 //    private Long sequence = 0L;
 //

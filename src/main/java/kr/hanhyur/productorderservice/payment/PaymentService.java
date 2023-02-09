@@ -1,9 +1,9 @@
 package kr.hanhyur.productorderservice.payment;
 
+import jakarta.transaction.Transactional;
 import kr.hanhyur.productorderservice.order.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +19,7 @@ class PaymentService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> payment(@RequestBody final PaymentRequest request) {
         final Order order = paymentPort.getOrder(request.orderId());
 
