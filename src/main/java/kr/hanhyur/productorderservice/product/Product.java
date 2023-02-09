@@ -38,6 +38,10 @@ class Product {
         this.price = price;
         this.discountPolicy = discountPolicy;
     }
+
+    public int getDiscountedPrice() {
+        return discountPolicy.applyDiscount(price);
+    }
 //
 //    public void assignId(Long id) {
 //        this.id = id;

@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
 @Table(name = "orders")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-class Order {
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,6 +26,10 @@ class Order {
         this.quantity = quantity;
         Assert.notNull(product, "Product is required");
         Assert.isTrue(quantity > 0, "Quantity must be bigger than 0");
+    }
+
+    public int getTotalPrice() {
+        return product.getDiscountedPrice() * quantity;
     }
 
 //    public void assignId(Long id) {
