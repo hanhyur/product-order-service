@@ -1,5 +1,7 @@
 package kr.hanhyur.productorderservice.product;
 
+import kr.hanhyur.productorderservice.product.domain.DiscountPolicy;
+import kr.hanhyur.productorderservice.product.domain.Product;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

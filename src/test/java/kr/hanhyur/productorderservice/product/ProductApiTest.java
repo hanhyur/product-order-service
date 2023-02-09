@@ -1,6 +1,7 @@
 package kr.hanhyur.productorderservice.product;
 
 import kr.hanhyur.productorderservice.ApiTest;
+import kr.hanhyur.productorderservice.product.adapter.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

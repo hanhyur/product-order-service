@@ -3,6 +3,9 @@ package kr.hanhyur.productorderservice.product;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
+import kr.hanhyur.productorderservice.product.application.service.AddProductRequest;
+import kr.hanhyur.productorderservice.product.application.service.UpdateProductRequest;
+import kr.hanhyur.productorderservice.product.domain.DiscountPolicy;
 import org.springframework.http.MediaType;
 
 public class ProductSteps {

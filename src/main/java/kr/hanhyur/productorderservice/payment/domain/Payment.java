@@ -1,7 +1,7 @@
-package kr.hanhyur.productorderservice.payment;
+package kr.hanhyur.productorderservice.payment.domain;
 
 import jakarta.persistence.*;
-import kr.hanhyur.productorderservice.order.Order;
+import kr.hanhyur.productorderservice.order.domain.Order;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +10,7 @@ import org.springframework.util.Assert;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+public
 class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

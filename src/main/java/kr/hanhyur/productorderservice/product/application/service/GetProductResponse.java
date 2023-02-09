@@ -1,5 +1,6 @@
-package kr.hanhyur.productorderservice.product;
+package kr.hanhyur.productorderservice.product.application.service;
 
+import kr.hanhyur.productorderservice.product.domain.DiscountPolicy;
 import org.springframework.util.Assert;
 
 record GetProductResponse(

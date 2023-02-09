@@ -3,6 +3,7 @@ package kr.hanhyur.productorderservice.order;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
+import kr.hanhyur.productorderservice.order.application.service.AddOrderRequest;
 import org.springframework.http.MediaType;
 
 public class OrderSteps {

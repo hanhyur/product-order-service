@@ -1,7 +1,9 @@
-package kr.hanhyur.productorderservice.order;
+package kr.hanhyur.productorderservice.order.adapter;
 
-import kr.hanhyur.productorderservice.product.Product;
-import kr.hanhyur.productorderservice.product.ProductRepository;
+import kr.hanhyur.productorderservice.order.application.port.OrderPort;
+import kr.hanhyur.productorderservice.order.domain.Order;
+import kr.hanhyur.productorderservice.product.adapter.ProductRepository;
+import kr.hanhyur.productorderservice.product.domain.Product;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,7 +1,7 @@
-package kr.hanhyur.productorderservice.order;
+package kr.hanhyur.productorderservice.order.domain;
 
 import jakarta.persistence.*;
-import kr.hanhyur.productorderservice.product.Product;
+import kr.hanhyur.productorderservice.product.domain.Product;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

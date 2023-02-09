@@ -1,4 +1,4 @@
-package kr.hanhyur.productorderservice.payment;
+package kr.hanhyur.productorderservice.payment.adapter;
 
 import org.springframework.stereotype.Component;
 

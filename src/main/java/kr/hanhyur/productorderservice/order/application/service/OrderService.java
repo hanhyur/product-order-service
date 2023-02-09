@@ -1,7 +1,10 @@
-package kr.hanhyur.productorderservice.order;
+package kr.hanhyur.productorderservice.order.application.service;
 
 import jakarta.transaction.Transactional;
-import kr.hanhyur.productorderservice.product.Product;
+import kr.hanhyur.productorderservice.order.application.port.OrderPort;
+import kr.hanhyur.productorderservice.order.domain.Order;
+
+import kr.hanhyur.productorderservice.product.domain.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

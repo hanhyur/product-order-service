@@ -1,4 +1,4 @@
-package kr.hanhyur.productorderservice.product;
+package kr.hanhyur.productorderservice.product.domain;
 
 public enum DiscountPolicy {
 

@@ -1,4 +1,4 @@
-package kr.hanhyur.productorderservice.payment;
+package kr.hanhyur.productorderservice.payment.application.service;
 
 import org.springframework.util.Assert;
 

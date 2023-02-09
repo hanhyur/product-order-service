@@ -3,6 +3,7 @@ package kr.hanhyur.productorderservice.payment;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
+import kr.hanhyur.productorderservice.payment.application.service.PaymentRequest;
 import org.springframework.http.MediaType;
 
 public class PaymentSteps {

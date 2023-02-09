@@ -1,5 +1,8 @@
 package kr.hanhyur.productorderservice.product;
 
+import kr.hanhyur.productorderservice.product.application.service.GetProductResponse;
+import kr.hanhyur.productorderservice.product.application.service.ProductService;
+import kr.hanhyur.productorderservice.product.application.service.UpdateProductRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

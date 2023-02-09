@@ -1,7 +1,9 @@
-package kr.hanhyur.productorderservice.payment;
+package kr.hanhyur.productorderservice.payment.application.service;
 
 import jakarta.transaction.Transactional;
-import kr.hanhyur.productorderservice.order.Order;
+import kr.hanhyur.productorderservice.order.domain.Order;
+import kr.hanhyur.productorderservice.payment.application.port.PaymentPort;
+import kr.hanhyur.productorderservice.payment.domain.Payment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

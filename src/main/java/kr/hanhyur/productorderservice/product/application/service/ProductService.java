@@ -1,6 +1,8 @@
-package kr.hanhyur.productorderservice.product;
+package kr.hanhyur.productorderservice.product.application.service;
 
 import jakarta.transaction.Transactional;
+import kr.hanhyur.productorderservice.product.application.port.ProductPort;
+import kr.hanhyur.productorderservice.product.domain.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

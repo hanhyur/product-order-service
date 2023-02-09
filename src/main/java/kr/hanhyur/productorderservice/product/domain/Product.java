@@ -1,4 +1,4 @@
-package kr.hanhyur.productorderservice.product;
+package kr.hanhyur.productorderservice.product.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
